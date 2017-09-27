@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<link rel="stylesheet" href="css/default.css">
+		<title></title>
+		<link rel="stylesheet" href="css/myselfcss.css" />
+		<style type="text/css">
+			.ali_content {
+				background: gray;
+				clear: left;
+			}
+			.button_click{
+				margin-top: 100px;
+			float: left;
+				clear: left;
+				width: 100px;
+				height: 44px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="top_one">
+			<div class="logo_left">
+				<img src="img/btn_back.png" width="30px" />
+			</div>
+			<div class="top_center_content">
+				<a class="top_center_content_text">充值</a>
+			</div>
+		</header>
+		<div style="padding: 5px; ">
+			<a style="padding: 5px;">金额(￥)</a>
+			<!--保证只输入数字-->
+			<input onkeyup="this.value=this.value.replace(/[^\d.]/g,'')" onafterpaste="this.value=this.value.replace(/[^\d.]/g,'')" value="请输入要充值的金额" style="color: green;" />
+		</div>
+		<div style="padding: 10px;">
+			<div>支付方式</div>
+			<!--多处浮动，可用clear解除，妙极-->
+			<div class="ali_content">
+				<img src="img/ali_icon.png" width="30px" style="float: left;" />
+				<img src="img/recharge_unselect_icon.png" width="30px" style="float: right;" />
+			</div>
+			<div class="ali_content">
+				<img src="img/weixin_icon.png" width="30px" style="float: left;" />
+				<img src="img/recharge_unselect_icon.png" width="30px" style="float: right;" />
+			</div>
+		</div>
+		<button class="button_click" ></button>
+	</body>
+
+</html>
