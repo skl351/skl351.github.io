@@ -1,0 +1,23 @@
+.top_one {
+	width: 100%;
+	height: 40px;
+	text-align: center; //其内子元素都相对于父元素居中
+}
+
+.logo_left {
+	width: 10%;
+	float: left;
+	margin: 5px;
+	height: 30px;
+	display: inline-block;
+	text-align: left;
+}
+
+.top_center_content {
+	line-height: 40px;
+	display: inline-block;
+}
+
+.top_center_content_text {
+	color: #5bb53b;
+}
