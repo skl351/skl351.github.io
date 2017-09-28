@@ -15,14 +15,33 @@
 				background: gray;
 				clear: left;
 			}
-			.button_click{
+			
+			.button_click {
 				margin-top: 100px;
-			float: left;
+				float: left;
 				clear: left;
 				width: 100px;
 				height: 44px;
 			}
 		</style>
+		<script>
+			
+			var element1=document.getElementById("ali_pay")
+			var element2=document.getElementById("weix_pay")
+			var element3=document.getElementById("ali_pay_select")
+	
+			var element4=document.getElementById("weix_pay_select")
+			function ali_click(){
+					
+				element3.src="img/recharge_select_icon.png"
+				element4.src="img/recharge_unselect_icon.png"
+			}
+			function weix_click(){
+				element3.src="img/recharge_unselect_icon.png"
+				element4.src="img/recharge_select_icon.png"
+			}
+			element1.addEventListener('click',ali_click(),false)
+		</script>
 	</head>
 
 	<body>
@@ -42,16 +61,17 @@
 		<div style="padding: 10px;">
 			<div>支付方式</div>
 			<!--多处浮动，可用clear解除，妙极-->
-			<div class="ali_content">
+			<div class="ali_content" id="ali_pay" >
 				<img src="img/ali_icon.png" width="30px" style="float: left;" />
-				<img src="img/recharge_unselect_icon.png" width="30px" style="float: right;" />
+				<img src="img/recharge_unselect_icon.png" width="30px" style="float: right;" id="ali_pay_select" />
 			</div>
-			<div class="ali_content">
+			<div class="ali_content" id="weix_pay" >
 				<img src="img/weixin_icon.png" width="30px" style="float: left;" />
-				<img src="img/recharge_unselect_icon.png" width="30px" style="float: right;" />
+				<img src="img/recharge_unselect_icon.png" width="30px" style="float: right;" id="weix_pay_select/>
 			</div>
 		</div>
-		<button class="button_click" ></button>
+		
+		<button class=" button_click " ></button>
 	</body>
-
+		
 </html>
